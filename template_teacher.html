@@ -1,0 +1,48 @@
+<style>
+    img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: 50vh;
+    }
+</style>
+
+<article>
+    <h2>Witaj, {{ user }}</h2>
+
+    <p>
+        W celu utworzenia konta na platformie edukacyjnej o365, która jest uzupełnieniem usług świadczonych drogą elektroniczną przez naszą szkołę, postępuj zgodnie z krokami opisanymi poniżej.
+    </p>
+
+    <ol>
+        <li>
+            Wejdź na stronę <a href="https://teams.microsoft.com" target="_blank">https://teams.microsoft.com</a>
+        </li>
+        <li>
+            Zaloguj się na swoje konto korzystając z poniższych danych: <br/>
+            <br/>
+            <code>
+                <strong>Użytkownik:</strong> {{ email }}
+            </code>
+            <br/>
+            <code>
+                <strong>Hasło:</strong> {{ pass }}
+            </code>
+        </li>
+        <li>
+            <p>
+                Po zalogowaniu zobaczysz aplikację MS Teams do wspólpracy. Zachęcamy do instalacji sugerowanej aplikacji lub użycie najnowszych przeglądarek:
+            </p>
+
+            <ul>
+                <li>
+                    <a href="https://bit.ly/sciagnij-chrome" target="_blank">Chrome</a> - https://bit.ly/sciagnij-chrome
+                </li>
+                <li>
+                    <a href="https://bit.ly/sciagnij-edge" target="_blank">Microsoft Edge</a> - https://bit.ly/sciagnij-edge
+                </li>
+            </ul>
+        </li>
+    </ol>
+
+</article>

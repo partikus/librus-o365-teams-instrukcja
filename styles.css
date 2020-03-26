@@ -1,0 +1,80 @@
+html, body {
+	font-family: monospace, -moz-fixed, courier;
+	line-height: 1.5em;
+	font-size: 14px;
+}
+h1, h2, h3, h4 {
+	margin-top: 3em;
+	margin-bottom: 2em;
+	padding-bottom: .5em;
+	padding-top: .2em;
+	position: relative;
+	padding-left: 1em;
+}
+h1::after, h2::after, h3::after, h4::after {
+	border-top: 0.2em solid black;
+	border-left: 0.2em solid black;
+	padding-left: 0.5em;
+	width: auto;
+	height: 2em;
+	left: 0;
+	right: auto;
+	top: -0.5em;
+	position: absolute;
+	display: block;
+	content: ' ';
+}
+
+img {
+	width: auto;
+	max-width: calc(100% - 2em);
+	height: auto;
+	max-height: 80vh;
+	margin: 1em 0;
+	padding: .3em;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+pre {
+	padding: 1em;
+	border: 1px dashed rgba(0,0,0, 0.2);
+}
+table {
+	border: 1px solid black;
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+table tr td {
+	border: 1px solid black;
+	padding: 5px 10px;
+}
+ol, ul {
+	margin-bottom: 2em;
+	margin-top: 2em;
+}
+ol li, ul li {
+	padding: .5em 0;
+	border-top: 1px dashed rgba(0,0,0, 0.2);
+	border-right: 1px dashed rgba(0,0,0, 0.2);
+}
+ol li:last-child, ul li:last-child {
+	border-bottom: 1px dashed rgba(0,0,0, 0.2);
+}
+blockquote {
+	margin-top: 1em;
+	margin-bottom: 2em;
+	margin-left: .0em;
+	font-style: italic;
+	font-weight: 700;
+	width: auto;
+	min-width: 50vw;
+	color: rgba(227, 32, 50, 1);
+	border-bottom: 4px double rgba(227, 32, 50, 1);
+	padding: .5em 1em 0 0;
+	line-height: 2em;
+	vertical-align: top;
+}
+.fullpage {
+	margin-top: 4em;
+	min-height: 30vh;
+}
